@@ -1,0 +1,29 @@
+{
+  "name": "usm-against-humanity",
+  "version": "0.9-12",
+  "description": "Cards Against Humanities implemented in NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cassler/usm-against-humanity.git"
+  },
+  "dependencies": {
+    "express": "~3.4.4",
+    "ejs": "~0.8.3",
+    "jasmine-node": "~1.11.0",
+    "underscore": "~1.4.2",
+    "socket.io": "~0.9.11",
+    "backbone": "~1.1.2",
+    "qs": "~0.6.5",
+    "oauth": "~0.9.10",
+    "redis": "~0.8.4",
+    "redis-url": "0.3.1",
+    "request": "~2.27.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

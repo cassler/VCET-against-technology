@@ -1,0 +1,17 @@
+<h4>Instructions</h4>
+<ul>
+  <li>Enter your name at the top.</li>
+  <li>You need 4 players to play.</li>
+  <li>Use the Create Game link at the top to start a game or...</li>
+  <li>click below to join a game.</li>
+</ul>
+<hr />
+<div class="row" id="availableGames" >
+  <div class="col-lg-10">
+    <strong id="noGames" ng-show="availableGames.length == 0">no open games... use the Create Game link at the top to start one.</strong>
+    <div ng-repeat="game in availableGames" class="well">
+      <button ng-click="joinGame(game.id)" type="button" class="btn btn-primary" style="margin-right: 10px;">Join Game</button>
+      <span style="font-size: larger">{{game.name}} - {{game.players}} of 4 players</span>
+    </div>
+  </div>
+</div>
