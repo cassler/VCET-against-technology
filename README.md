@@ -1,6 +1,6 @@
 ##USM Against Humanity
 
-NodeJS implementation of Cards Against Humanity. Here's a screenshot:
+NodeJS implementation of Cards Against Humanity.
 
 ##Run Locally
 
@@ -13,6 +13,12 @@ Run the app:
     node server.js
 
 Then navigate to `http://localhost:3000`
+
+If you are running the game on a machine with a public static IP address, you can instead navigate to `http://youipordomain.com:3000`
+
+NodeJS runs on port 3000 by default as to avoid conflicting with other HTTP servers. If you want the game to run on port 80 so just a domain or IP is needed, modify `server.js:30`. Simply change the '3000' value to '80'. Make sure to restart Node after making a change; Nodemon will automatically restart when a change is detected.
+
+`server.listen(process.env.PORT || 3000);`
 
 If you want tests to execute every time you change a file:
 
