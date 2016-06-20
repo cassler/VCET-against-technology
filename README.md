@@ -1,4 +1,4 @@
-##USM Against Humanity
+##VCET Against Technology 
 
 NodeJS implementation of Cards Against Humanity.
 
